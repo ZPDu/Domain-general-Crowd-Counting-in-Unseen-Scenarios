@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of 'Domain-general Crowd Counting in Unseen Scenarios'.(AAAI 2023) [[arXiv](https://arxiv.org/abs/2212.02573)]
 
-![overview](.\overview.PNG)
+![overview](./samples_imgs/overview.PNG)
 
 
 
