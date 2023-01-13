@@ -8,11 +8,11 @@ Official PyTorch implementation of 'Domain-general Crowd Counting in Unseen Scen
 
 We will release the data, model and rest of the code later. A detailed instruction will also be provided.
 
-### Acknowledgements
+## Acknowledgement
 
 Part of codes are borrowed from [DomainBed](https://github.com/facebookresearch/DomainBed) and [dg_mmld](https://github.com/mil-tokyo/dg_mmld). Thanks for their great work!
 
-### Citation 
+## Citation
 
 If you find this work useful, please cite
 
