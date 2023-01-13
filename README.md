@@ -6,4 +6,16 @@ Official PyTorch implementation of 'Domain-general Crowd Counting in Unseen Scen
 
 
 
-The code is now under preparation and will be released later.
+We will release the data, model and rest of the code later.
+
+## Citation
+
+If you find this work useful, please cite
+
+``` @article{du2022redesigning,
+@article{du2022domain,
+  title={Domain-general Crowd Counting in Unseen Scenarios},
+  author={Du, Zhipeng and Deng, Jiankang and Shi, Miaojing},
+  journal={arXiv preprint arXiv:2212.02573},
+  year={2022}
+}
