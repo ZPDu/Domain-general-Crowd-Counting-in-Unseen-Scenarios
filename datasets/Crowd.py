@@ -9,7 +9,7 @@ def _pluck(root):
 
 class CrowdTest(object):
     def __init__(self, root):
-        super(QNRF, self).__init__()
+        super(CrowdTest, self).__init__()
         self.root = root
         self.train = []
         # self._check_integrity()

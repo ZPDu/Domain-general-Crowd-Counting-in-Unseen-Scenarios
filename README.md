@@ -4,9 +4,13 @@ Official PyTorch implementation of 'Domain-general Crowd Counting in Unseen Scen
 
 ![overview](./samples_imgs/overview.PNG)
 
+## Evaluation
 
+- Download our trained model, [SHA](https://drive.google.com/file/d/1WalB-jPXDvhpaiuvD8bQr4O9Olb2cWSD/view?usp=sharing) or [SHB](https://drive.google.com/file/d/1DwFy16sLq4F0qFsjP_sH-febjSgtTn2h/view?usp=sharing).
 
-We will release the data, model and rest of the code later. A detailed instruction will also be provided.
+- Modify the path to the dataset and model for evaluation in 'test.py'.
+
+- Run 'test.py'
 
 ## Acknowledgement
 

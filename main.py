@@ -16,7 +16,7 @@ from utils.data.preprocessor import Preprocessor
 from utils.data.preprocessor_tran import Preprocessor_tran
 from utils.data import transforms as T
 import datasets
-from trainer import Trainer
+from utils.trainer import Trainer
 from evaluator import Evaluator
 from utils.clustering.domain_split import domain_split
 
@@ -58,7 +58,7 @@ def get_train_loader(args, dataset, height, width, batch_size, workers,
 
     return train_loader
 
-def get_test_loader(dataset, height, width, batch_size, workers):
+def get_test_loader(dataset, batch_size, workers):
     normalizer = T.standard_transforms.Normalize(mean=[0.485, 0.456, 0.406],
                              std=[0.229, 0.224, 0.225])
     test_transformer = None
@@ -122,7 +122,7 @@ def main_worker(args):
     dataset_src = get_data(args.data_dir, True, args.num_clustering)
     dataset_trg = get_data(args.data_dir, False)
 
-    test_loader = get_test_loader(dataset_trg, args.height, args.width, args.test_batch_size, args.workers)
+    test_loader = get_test_loader(dataset_trg, args.test_batch_size, args.workers)
 
     #Evaluator
     evaluator = Evaluator(model)
@@ -197,13 +197,13 @@ def main():
     main_worker(args)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Self-paced contrastive learning on unsupervised re-ID")
+    parser = argparse.ArgumentParser(description="Training code for Domain-general Crowd Counting in Unseen Scenarios")
     # data
     parser.add_argument('--num-clustering', type=int, default=4)
     parser.add_argument('--cluster-step', type=int, default=1)
     parser.add_argument('-b', '--batch-size', type=int, default=1)
     parser.add_argument('--test-batch-size', type=int, default=1)
-    parser.add_argument('-j', '--workers', type=int, default=4)
+    parser.add_argument('-j', '--workers', type=int, default=0)
     parser.add_argument('--height', type=int, default=320, help="input height")
     parser.add_argument('--width', type=int, default=320, help="input width")
 
@@ -211,7 +211,7 @@ if __name__ == '__main__':
     parser.add_argument('-a', '--arch', type=str, default='msMeta',
                         choices=networks.names())
     # optimizer
-    parser.add_argument('--lr', type=float, default=0.00001,
+    parser.add_argument('--lr', type=float, default=1e-5,
                         help="learning rate")
     parser.add_argument('--weight-decay', type=float, default=1e-4)
     parser.add_argument('--epochs', type=int, default=135)

@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from .MetaMemNetCluster import *
+from .MetaMemNet import *
 __factory = {
     'memMeta': MetaMemNet,
 }
