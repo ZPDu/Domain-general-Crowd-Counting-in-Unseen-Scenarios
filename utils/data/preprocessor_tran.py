@@ -10,7 +10,7 @@ from utils.data import transforms as T
 
 class Preprocessor_tran(Dataset):
     def __init__(self, dataset, root=None, main_transform=None, img_transform=None, gt_transform=None):
-        super(Preprocessor2, self).__init__()
+        super(Preprocessor_tran, self).__init__()
         self.dataset = dataset
         self.root = root
         self.main_transform = main_transform

@@ -16,7 +16,7 @@ from utils.data.preprocessor import Preprocessor
 from utils.data.preprocessor_tran import Preprocessor_tran
 from utils.data import transforms as T
 import datasets
-from utils.trainer import Trainer
+from utils.trainer_vanilla import Trainer
 from evaluator import Evaluator
 from utils.clustering.domain_split import domain_split
 

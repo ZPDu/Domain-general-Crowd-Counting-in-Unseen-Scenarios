@@ -152,9 +152,8 @@ class MetaMSNetBase(MetaModule):
         sim_loss2 = F.cross_entropy(recon_sim2, sim_gt2.long(), reduction='sum') * 0.1
         # orthogonal loss between sem and sty features
         orth_pre = torch.bmm(sty_pre_.transpose(1, 2), sem_pre_)
-        orth = torch.bmm(spe_feature.transpose(1, 2), invariant_feature)
-        orth_loss = 0.01 * torch.sum(torch.pow(torch.diagonal(orth_pre, dim1=-2, dim2=-1), 2) +
-                                           torch.pow(torch.diagonal(orth, dim1=-2, dim2=-1), 2))
+        # orth = torch.bmm(spe_feature.transpose(1, 2), invariant_feature)
+        orth_loss = 0.01 * torch.sum(torch.pow(torch.diagonal(orth_pre, dim1=-2, dim2=-1), 2))
 
         return den, sim_loss, sim_loss2, orth_loss
 

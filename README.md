@@ -1,6 +1,6 @@
 # Domain-general Crowd Counting in Unseen Scenarios
 
-Official PyTorch implementation of 'Domain-general Crowd Counting in Unseen Scenarios'.(AAAI 2023) [[arXiv](https://arxiv.org/abs/2212.02573)]
+Official PyTorch implementation of 'Domain-general Crowd Counting in Unseen Scenarios'.(AAAI 2023 Oral) [[arXiv](https://arxiv.org/abs/2212.02573)]
 
 ![overview](./samples_imgs/overview.PNG)
 
