@@ -1,6 +1,4 @@
-torch==1.10.1
-torchvision==0.11.2
-h5py
-opencv-python
-easydict
+torch==1.11.0
+torchvision==0.12.0
 pandas
+scikit-learn
