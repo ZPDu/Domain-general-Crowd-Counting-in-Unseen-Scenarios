@@ -4,6 +4,16 @@ Official PyTorch implementation of 'Domain-general Crowd Counting in Unseen Scen
 
 ![overview](./samples_imgs/overview.PNG)
 
+## Preparation
+
+Python ≥ 3.7.
+
+To install the required packages, please run:
+
+``pip install -r requirements.txt``
+
+For the data preparation, we follow the processing code in [C-3-Framework](https://github.com/gjy3035/C-3-Framework).
+
 ## Evaluation
 
 - Download our trained model, [SHA](https://drive.google.com/file/d/1WalB-jPXDvhpaiuvD8bQr4O9Olb2cWSD/view?usp=sharing) or [SHB](https://drive.google.com/file/d/1DwFy16sLq4F0qFsjP_sH-febjSgtTn2h/view?usp=sharing).
