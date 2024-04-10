@@ -14,6 +14,11 @@ To install the required packages, please run:
 
 For the data preparation, we follow the processing code in [C-3-Framework](https://github.com/gjy3035/C-3-Framework). (Find processed UCF-QNRF [here](https://drive.google.com/file/d/1k9knSzERrLMQ6IuYh89iptQdcWEmA_AE/view?usp=share_link))
 
+## Train
+
+- Set up the settings in main.py
+- Run 'main.py'
+
 ## Evaluation
 
 - Download our trained model, [SHA](https://drive.google.com/file/d/1WalB-jPXDvhpaiuvD8bQr4O9Olb2cWSD/view?usp=sharing) or [SHB](https://drive.google.com/file/d/1DwFy16sLq4F0qFsjP_sH-febjSgtTn2h/view?usp=sharing).
