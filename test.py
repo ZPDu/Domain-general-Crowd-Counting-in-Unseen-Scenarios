@@ -20,7 +20,7 @@ if __name__ == '__main__':
     
     net = networks.create('memMeta')
     checkpoint = torch.load(args.model_dir, map_location=torch.device('cpu'))
-    net.load_state_dict(checkpoint, strict=False)
+    net.load_state_dict(checkpoint['state_dict'] if isinstance(checkpoint, dict) and 'state_dict' in checkpoint else checkpoint, strict=False)
     net.cuda()
     net.eval()
     print('=' * 50)
